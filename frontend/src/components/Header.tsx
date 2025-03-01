@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Button from "./ui/Button"
 import LogoRed from "./ui/LogoRed"
 import Navbar from "./Navbar"
@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="flex justify-between items-center mx-auto px-8 py-4 md:py-2 max-w-[1500px]">
+      <div className="flex justify-between items-center mx-auto px-10 py-4 md:py-2 max-w-[1500px]">
         <div>
           <LogoRed/>
         </div>
@@ -27,7 +27,7 @@ const Header = () => {
         {/* Backdrop Overlay (Closes menu when clicked) */}
         {isOpen && (
     <div 
-        className="fixed inset-0 bg-black bg-opacity-30 transition-opacity duration-300 z-10" 
+        className="fixed inset-0 bg-black opacity-30 transition-opacity duration-300 z-10" 
         onClick={() => setIsOpen(false)}></div>
 )}
 
