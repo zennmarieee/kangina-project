@@ -5,3 +5,24 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light background */
+
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #F58E26; /* Match your primary theme color */
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6B74E1; /* Slightly lighter when hovered */
+  }
+  

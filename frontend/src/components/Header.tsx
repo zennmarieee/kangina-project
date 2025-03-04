@@ -12,7 +12,9 @@ const Header = () => {
     <header>
       <div className="flex justify-between items-center mx-auto px-10 py-4 md:py-2 max-w-[1500px]">
         <div>
-          <LogoRed/>
+          <Link to="/">
+            <LogoRed/>
+          </Link>
         </div>
         <Navbar />
         <Button text={'Get Started'} className="px-6 py-1 bg-white text-[#ed3f25] rounded-full border-2 border-red-500 hover:bg-red-500 hover:text-white transition-all duration-300 hidden md:block"></Button>

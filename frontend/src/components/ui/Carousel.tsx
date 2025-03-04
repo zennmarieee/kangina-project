@@ -1,12 +1,7 @@
 import { useState } from 'react';
+import images from '../../utils/importedImages';
 
 const Carousel = () => {
-  const images = [
-    "https://placehold.co/500x300?text=Image+1",
-    "https://placehold.co/500x300?text=Image+2",
-    "https://placehold.co/500x300?text=Image+3"
-  ];
-  
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -20,13 +15,14 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="overflow-hidden">
-        <img
-          src={images[currentIndex]}
-          alt={`carousel image ${currentIndex + 1}`}
-          className="w-full object-cover"
-        />
+    <div className="relative overflow-hidden w-full">
+      <div 
+        className="flex transition-transform duration-700 ease-in-out" 
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((img, index) => (
+          <img key={index} src={img} alt={`Slide ${index}`} className="w-full flex-shrink-0" />
+        ))}
       </div>
 
       {/* Left Arrow */}
