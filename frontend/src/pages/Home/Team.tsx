@@ -20,9 +20,6 @@ const MemberCard:React.FC<MemberCard> = ({ image, name, title }) => {
 
 const Team = () => {
 
-
-
-
   return (
     <div className="bg-[#F6F6F6] p-5">
         <h3 className="text-[3rem] font-[800] text-[#32347C] text-center">Meet the Team</h3>

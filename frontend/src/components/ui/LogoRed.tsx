@@ -1,8 +1,12 @@
 import logoRed from '../../assets/LogoRed.svg'
 
-const LogoRed = () => {
+interface LogoRedProps {
+  className?: string;
+}
+
+const LogoRed: React.FC<LogoRedProps> = ({ className }) => {
   return (
-    <img src={logoRed} className='w-6'/>
+    <img src={logoRed} className={className}/>
   )
 }
 
