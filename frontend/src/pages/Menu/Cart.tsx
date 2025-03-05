@@ -20,7 +20,7 @@ const Cart: React.FC<CartProps> = ({ cartItems, removeFromCart, updateQuantity }
   const totalAmount = subTotal + tax;
 
   return (
-    <div className="w-1/3 bg-white p-4 rounded-lg flex flex-col h-full">
+    <div className="w-1/4 bg-white p-4 rounded-lg flex flex-col h-full">
       <h2 className="text-4xl font-extrabold text-[#32347C]">Kain na, User!</h2>
       <hr className="my-5 w-full border-gray-400" />
       <p className="text-[#32347C] mt-2">Here's what's in your cart:</p>

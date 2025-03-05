@@ -26,7 +26,7 @@ const FeatureItem: React.FC<FeatureItem> = ({ image, title, description, bgColor
 
 const Features = () => {
   return (
-    <div className="flex flex-col items-center gap-4 p-15 md:flex-row md:items-baseline md:justify-around md:gap-5">
+    <div className="flex flex-col items-center gap-4 p-15 md:p-24 md:flex-row md:items-baseline md:justify-around md:gap-5">
         <FeatureItem image={Icon1} title="EASY ORDER SYSTEM." description="Seamlessly place your orders with just a few taps for a hassle-free experience."/>
         <FeatureItem image={Icon2} title="QUALITY FOOD." description="Savor expertly crafted dishes made with the finest and local ingredients." bgColor="#EC4024"/>
         <FeatureItem image={Icon3} title="QUICK DELIVERY." description="Enjoy fast, fresh, and flavorful meals delivered straight to your doorstep."/>

@@ -17,7 +17,9 @@ const Header = () => {
           </Link>
         </div>
         <Navbar />
-        <Button text={'Get Started'} className="px-6 py-1 bg-white text-[#ed3f25] rounded-full border-2 border-red-500 hover:bg-red-500 hover:text-white transition-all duration-300 hidden md:block"></Button>
+        <Link to="/login">
+          <Button text={'Get Started'} className="px-6 py-1 bg-white text-[#ed3f25] rounded-full border-2 border-red-500 hover:bg-red-500 hover:text-white transition-all duration-300 hidden md:block"></Button>
+        </Link>
 
         <div className="md:hidden">
           <button onClick={() => setIsOpen(true)} className="text-gray-700 text-2xl focus:outline-none">

@@ -21,12 +21,12 @@ const Login: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="h-screen justify-start items-center flex space-x-10 p-10 md:p-20 max-w-[1600px] mx-auto">
-      <div className=" w-[500px]">
+    <div className="h-screen justify-start items-center flex  p-10 md:p-32 max-w-[1600px] mx-auto">
+      <div className='w-[460px]'>
         <Link to="/">
             <LogoRed className="cursor-pointer w-8"/>
         </Link>
-        <h2 className="text-4xl font-extrabold text-[#ed3f25] mb-4 mt-4">Log in.</h2>
+        <h2 className="text-5xl font-extrabold text-[#ed3f25] mb-4 mt-4">Log in.</h2>
         <p className="text-lg text-gray-600 mb-6">Welcome back! Please log in to your account.</p>
         <form className="space-y-4">
           <div>
@@ -56,11 +56,13 @@ const Login: React.FC = () => {
             </button>
           </div>
 
+        <Link to="/dashboard">
           <button 
             type="submit" 
             className="w-full py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">
             Log in
           </button>
+        </Link>
         </form>
 
         <p className="mt-4 text-base">

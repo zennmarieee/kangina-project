@@ -9,7 +9,7 @@ export const Hero = () => {
     <div className="flex flex-col md:flex-row w-full h-auto md:h-screen mt-5 md:m-0">
       {/* Left Side - Animated Text and Buttons */}
       <motion.div 
-        className="w-full md:w-1/2 self-center px-5 mx-6 text-center md:text-left md:mt-10"
+        className="w-full md:w-1/2 self-center px-5 mx-10 text-center md:text-left md:mt-10"
         initial={{ opacity: 0, x: -50 }} // Start hidden and slightly left
         animate={{ opacity: 1, x: 0 }} // Fade in and move to position
         transition={{ duration: 1, ease: "easeOut" }} // Smooth transition

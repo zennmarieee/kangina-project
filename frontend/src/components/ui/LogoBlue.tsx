@@ -1,8 +1,12 @@
 import logoBlue from '../../assets/LogoBlue.svg'
 
-const LogoBlue = () => {
+interface LogoBlueProps {
+  className?: string;
+}
+
+const LogoBlue: React.FC<LogoBlueProps> = ({ className }) => {
   return (
-    <img src={logoBlue}/>
+    <img src={logoBlue} className={className}/>
   )
 }
 

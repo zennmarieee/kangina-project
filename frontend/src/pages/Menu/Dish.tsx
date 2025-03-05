@@ -88,7 +88,7 @@ const Dish: React.FC<DishProps> = ({ searchTerm }) => {
         <>
           {/* Overlay */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="fixed inset-0  bg-opacity-50 z-50"
             onClick={() => setSelectedDish(null)}
           ></div>
 
